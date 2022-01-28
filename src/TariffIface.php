@@ -2,7 +2,7 @@
 interface TariffIface
 {
     public function getPrice() : int;
-    public function addService(ServiceIface $service);
-    public function getMinutes();
-    public function getDistance();
+    public function addService(ServiceIface $service) : self;
+    public function getMinutes() : int;
+    public function getDistance() : int;
 }
