@@ -2,11 +2,10 @@
 abstract class TariffAbstract implements TariffIface
 {
     protected $pricePerKilometer;
-    protected $pricePerMinutes;
     protected $distance;
     protected $minutes;
 
-    protected $services;
+    protected $services = [];
 
     public function __construct(int $distance, int $minutes)
     {
